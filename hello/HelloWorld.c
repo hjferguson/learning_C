@@ -34,19 +34,45 @@ int main(){
 
     // long long int l = 9223343243234324; //-9 quintillion to +9 quintillion %lld
 
-    int age;
+    // int age;
 
-    printf("\nEnter your age: ");
-    scanf("%d", &age);
+    // printf("\nEnter your age: ");
+    // scanf("%d", &age);
 
-    if(age >= 18){
-        printf("You are now signed up!");
-    }
-    else if(age < 0){
-        printf("You haven't been born yet!");
+    // if(age >= 18){
+    //     printf("You are now signed up!");
+    // }
+    // else if(age < 0){
+    //     printf("You haven't been born yet!");
 
-    }else{
-        printf("You are too young to sign up!");
+    // }else{
+    //     printf("You are too young to sign up!");
+    // }
+
+    //switch case
+    char grade;
+
+    printf("Enter a letter grade: ");
+    scanf("%c", &grade);
+    
+    switch(grade){
+        case 'A':
+            printf("perfect!\n");
+            break;
+        case 'B':
+            printf("you dun good\n");
+            break;
+        case 'C':
+            printf("better luck next time\n");
+            break;
+        case 'D':
+            printf("atleast it's not an F\n");
+            break;
+        case 'F':
+            printf("F in the chat\n");
+            break;
+        default:
+            printf("please enter only valid letter grades");
     }
 
 
